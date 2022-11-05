@@ -1,2 +1,8 @@
+tests\MakeAppointmentPozitivTest.class
 driver\WebdriverSet.class
+tests\MakeAppointmentButtonTest.class
+tests\InvalidLoginTest.class
+tests\ValidLoginTest.class
 tests\BaseTest.class
+tests\HomeButtonTests.class
+tests\MakeAppointmentNegativTest.class

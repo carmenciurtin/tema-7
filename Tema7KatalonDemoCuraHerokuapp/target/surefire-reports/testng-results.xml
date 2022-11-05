@@ -1,11 +1,413 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-27T22:31:27 EEST" name="tests.BaseTest" finished-at="2022-08-27T22:31:27 EEST" duration-ms="28">
+  <suite started-at="2022-11-05T17:40:46 EET" name="Command line suite" finished-at="2022-11-05T17:45:59 EET" duration-ms="312535">
     <groups>
     </groups>
-    <test started-at="2022-08-27T22:31:27 EEST" name="Command line test" finished-at="2022-08-27T22:31:27 EEST" duration-ms="28">
+    <test started-at="2022-11-05T17:40:46 EET" name="Command line test" finished-at="2022-11-05T17:45:59 EET" duration-ms="312535">
+      <class name="tests.MakeAppointmentNegativTest">
+        <test-method is-config="true" signature="AccesareURL()[pri:0, instance:tests.MakeAppointmentNegativTest@143640d5]" started-at="2022-11-05T17:43:40 EET" name="AccesareURL" finished-at="2022-11-05T17:44:31 EET" duration-ms="50387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesareURL -->
+        <test-method signature="testNegativRezervare()[pri:0, instance:tests.MakeAppointmentNegativTest@143640d5]" started-at="2022-11-05T17:44:31 EET" name="testNegativRezervare" description="Scenariu test negativ de rezervare" finished-at="2022-11-05T17:44:43 EET" duration-ms="12195" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://katalon-demo-cura.herokuapp.com/appointment.php#summary] but found [https://katalon-demo-cura.herokuapp.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://katalon-demo-cura.herokuapp.com/appointment.php#summary] but found [https://katalon-demo-cura.herokuapp.com]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at tests.MakeAppointmentNegativTest.testNegativRezervare(MakeAppointmentNegativTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativRezervare -->
+        <test-method is-config="true" signature="InchidereURL()[pri:0, instance:tests.MakeAppointmentNegativTest@143640d5]" started-at="2022-11-05T17:44:43 EET" name="InchidereURL" finished-at="2022-11-05T17:44:43 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InchidereURL -->
+      </class> <!-- tests.MakeAppointmentNegativTest -->
+      <class name="tests.MakeAppointmentPozitivTest">
+        <test-method is-config="true" signature="AccesareURL()[pri:0, instance:tests.MakeAppointmentPozitivTest@6295d394]" started-at="2022-11-05T17:44:43 EET" name="AccesareURL" finished-at="2022-11-05T17:45:23 EET" duration-ms="39880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesareURL -->
+        <test-method signature="testPozitivRezervare()[pri:0, instance:tests.MakeAppointmentPozitivTest@6295d394]" started-at="2022-11-05T17:45:23 EET" name="testPozitivRezervare" description="Scenariu test pozitiv de rezervare" finished-at="2022-11-05T17:45:28 EET" duration-ms="5356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPozitivRezervare -->
+        <test-method is-config="true" signature="InchidereURL()[pri:0, instance:tests.MakeAppointmentPozitivTest@6295d394]" started-at="2022-11-05T17:45:28 EET" name="InchidereURL" finished-at="2022-11-05T17:45:28 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InchidereURL -->
+      </class> <!-- tests.MakeAppointmentPozitivTest -->
+      <class name="tests.MakeAppointmentButtonTest">
+        <test-method is-config="true" signature="AccesareURL()[pri:0, instance:tests.MakeAppointmentButtonTest@21507a04]" started-at="2022-11-05T17:42:30 EET" name="AccesareURL" finished-at="2022-11-05T17:43:33 EET" duration-ms="62661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesareURL -->
+        <test-method signature="testMakeAppointmentButton()[pri:0, instance:tests.MakeAppointmentButtonTest@21507a04]" started-at="2022-11-05T17:43:33 EET" name="testMakeAppointmentButton" description="Make Appointment button va redirectiona userul la pasul de login, dacă el nu este logat în momentul in care apasă pe buton" finished-at="2022-11-05T17:43:40 EET" duration-ms="7221" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://katalon-demo-cura.herokuapp.com/profile.php#login] but found [https://katalon-demo-cura.herokuapp.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://katalon-demo-cura.herokuapp.com/profile.php#login] but found [https://katalon-demo-cura.herokuapp.com/]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at tests.MakeAppointmentButtonTest.testMakeAppointmentButton(MakeAppointmentButtonTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMakeAppointmentButton -->
+        <test-method is-config="true" signature="InchidereURL()[pri:0, instance:tests.MakeAppointmentButtonTest@21507a04]" started-at="2022-11-05T17:43:40 EET" name="InchidereURL" finished-at="2022-11-05T17:43:40 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InchidereURL -->
+      </class> <!-- tests.MakeAppointmentButtonTest -->
+      <class name="tests.ValidLoginTest">
+        <test-method is-config="true" signature="AccesareURL()[pri:0, instance:tests.ValidLoginTest@475e586c]" started-at="2022-11-05T17:45:28 EET" name="AccesareURL" finished-at="2022-11-05T17:45:52 EET" duration-ms="24320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesareURL -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.ValidLoginTest@475e586c]" started-at="2022-11-05T17:45:52 EET" name="testValidLogin" description="Login din meniul din colțul dreapta sus, cu un user valid" finished-at="2022-11-05T17:45:59 EET" duration-ms="6081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="InchidereURL()[pri:0, instance:tests.ValidLoginTest@475e586c]" started-at="2022-11-05T17:45:59 EET" name="InchidereURL" finished-at="2022-11-05T17:45:59 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InchidereURL -->
+      </class> <!-- tests.ValidLoginTest -->
+      <class name="tests.InvalidLoginTest">
+        <test-method is-config="true" signature="AccesareURL()[pri:0, instance:tests.InvalidLoginTest@534df152]" started-at="2022-11-05T17:40:46 EET" name="AccesareURL" finished-at="2022-11-05T17:42:30 EET" duration-ms="104004" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-VKNV70V', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-VKNV70V', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at driver.WebdriverSet.getChromedriver(WebdriverSet.java:10)
+at tests.BaseTest.AccesareURL(BaseTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 45 more
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccesareURL -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.InvalidLoginTest@534df152]" started-at="2022-11-05T17:42:30 EET" name="testInvalidLogin" description="Login din meniul din colțul dreapta sus, cu un user valid" finished-at="2022-11-05T17:42:30 EET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-VKNV70V', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-VKNV70V', ip: '192.168.100.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:587)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at driver.WebdriverSet.getChromedriver(WebdriverSet.java:10)
+at tests.BaseTest.AccesareURL(BaseTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:120)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+... 45 more
+Caused by: java.net.ConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/[0:0:0:0:0:0:0:1]:61370
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="InchidereURL()[pri:0, instance:tests.InvalidLoginTest@534df152]" started-at="2022-11-05T17:42:30 EET" name="InchidereURL" finished-at="2022-11-05T17:42:30 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InchidereURL -->
+      </class> <!-- tests.InvalidLoginTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- tests.BaseTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>
